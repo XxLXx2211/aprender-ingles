@@ -1,0 +1,44 @@
+:root {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Estilos para el juego */
+.game-container {
+  padding: 20px;
+}
+
+/* Animación para respuestas correctas */
+@keyframes correctAnswer {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.correct-answer {
+  animation: correctAnswer 0.5s ease;
+}
+
+/* Estilos para el modo cronometrado */
+.timer-warning {
+  color: #f44336;
+  font-weight: bold;
+}
+
+/* Estilos para racha de respuestas */
+.streak-counter {
+  font-weight: bold;
+  color: #4caf50;
+}
